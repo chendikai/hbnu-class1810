@@ -63,7 +63,7 @@ public class Poker {
         System.out.print(name + "::");
         Iterator<String> iterator = arrayList.iterator();
         while (iterator.hasNext()) {
-            System.out.print(iterator.next() + "  ");
+            System.out.print(iterator.next() + " ");
         }
         System.out.println();
     }
