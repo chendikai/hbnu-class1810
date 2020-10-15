@@ -1,10 +1,7 @@
 package com.dingli.collection;
 
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class HashMapTest {
     public static void main(String[] args) {
@@ -24,6 +21,11 @@ public class HashMapTest {
             System.out.println(key + "： " + value);
         }
 
+        Collection<String> values = hashMap.values(); // 获取集合中的值
+        Iterator<String> iterator2 = values.iterator();
+        while (iterator2.hasNext()) {
+            System.out.println(iterator2.next());
+        }
 
         Set<Map.Entry<Integer, String>> entries = hashMap.entrySet();
         Iterator<Map.Entry<Integer, String>> iterator1 = entries.iterator();
