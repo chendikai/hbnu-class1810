@@ -4,6 +4,10 @@ public class HouYi extends Heroes {
     private String blood;
     public String role;
 
+    public HouYi() {
+        super();
+    }
+
     public HouYi(String name, int age, String blood, String role) {
         super(name, age);
         this.blood = blood;
@@ -28,5 +32,13 @@ public class HouYi extends Heroes {
 
     public HouYi(String name, int age) {
         super(name, age);
+    }
+
+    private void fight() {
+        System.out.println("fight......");
+    }
+
+    public void bloodReturning() {
+        System.out.println("bloodReturning......");
     }
 }
