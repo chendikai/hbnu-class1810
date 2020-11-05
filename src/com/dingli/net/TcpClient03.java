@@ -47,7 +47,7 @@ public class TcpClient03 {
                 // 6、接收服务端返回的数据
                 String result = bufferedIn.readLine();
 
-                // 7、处理接收端返回的数据
+                // 7、处理服务端返回的数据
                 System.out.println("服务端返回的数据：" + result);
 
             }
