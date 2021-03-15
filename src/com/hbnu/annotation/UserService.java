@@ -9,10 +9,8 @@ import javax.annotation.Resource;
  * @author 陈迪凯
  * @date 2021-03-09 17:21
  */
-@Component(value = "userService")
 public class UserService {
 
-    //@Autowired
     @Resource(name = "userDao")
     private UserDao userDao;
 
