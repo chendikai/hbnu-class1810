@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="566a4a26-e2c6-4abf-a0cf-bc936f6797a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aopContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hbnu/aop/AOPTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hbnu/aop/LogRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hbnu/aop/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/aspectjweaver-1.8.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-aspects-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/JdbcTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/MyRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/C3p0Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbcTemplateContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/J2EE高级开发框架.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spring/annotation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring/annotation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spring/com/hbnu/annotation/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring/com/hbnu/annotation/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spring/com/hbnu/annotation/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring/com/hbnu/annotation/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/J2EE高级开发框架.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/annotation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hbnu/annotation/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hbnu/annotation/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hbnu/annotation/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hbnu/annotation/UserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,37 +67,43 @@
     <session id="-1427699333">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="383" />
-          <entry key="xml" value="304" />
+          <entry key="dummy" value="4" />
+          <entry key="java" value="1756" />
+          <entry key="xml" value="648" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="383" />
-          <entry key="XML" value="304" />
+          <entry key="JAVA" value="1756" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="XML" value="648" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
-          <entry key="xml" value="1" />
+          <entry key="class" value="2" />
+          <entry key="java" value="10" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
-          <entry key="XML" value="1" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="10" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -104,19 +111,68 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aopContext.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/JdbcTemplateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state relative-caret-position="103">
+              <caret line="111" column="100" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="100" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/AOPTest.java">
+        <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="1064">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="20" />
+              <folding>
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jdbcTemplateContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="28" column="68" lean-forward="true" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/C3p0Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="17" column="79" lean-forward="true" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,27 +181,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/UserService.java">
+        <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/MyRowMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" lean-forward="true" selection-end-line="12" />
+            <state relative-caret-position="243">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
               <folding>
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/LogRecord.java">
+        <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="448">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,6 +251,14 @@
         <option value="$PROJECT_DIR$/src/com/hbnu/aop/UserService.java" />
         <option value="$PROJECT_DIR$/src/aopContext.xml" />
         <option value="$PROJECT_DIR$/src/com/hbnu/aop/LogRecord.java" />
+        <option value="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/User.java" />
+        <option value="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/JdbcTemplateTest.java" />
+        <option value="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/MyRowMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/jdbcTemplateContext.xml" />
+        <option value="$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/C3p0Test.java" />
       </list>
     </option>
   </component>
@@ -201,7 +277,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="1940" />
     <option name="height" value="530" />
@@ -244,6 +320,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,31 +344,20 @@
               <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hbnu" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbcTemplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hbnu" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbcTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="c3p0" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -301,8 +367,8 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615779305090" />
-    <property name="last_opened_file_path" value="E:/chendikai/yonghe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616382637201" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -311,6 +377,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hbnu.jdbcTemplate.c3p0.entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\DingLi\class210\spring\src" />
       <recent name="E:\DingLi\class210\spring\web\WEB-INF\lib" />
@@ -330,65 +399,101 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AOPTest.aopTest">
-    <configuration name="AOPTest.aopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.C3p0Test.c3p0Test">
+    <configuration name="C3p0Test.c3p0Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hbnu.aop.*" />
+          <option name="PATTERN" value="com.hbnu.jdbcTemplate.c3p0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hbnu.aop" />
-      <option name="MAIN_CLASS_NAME" value="com.hbnu.aop.AOPTest" />
-      <option name="METHOD_NAME" value="aopTest" />
+      <option name="PACKAGE_NAME" value="com.hbnu.jdbcTemplate.c3p0" />
+      <option name="MAIN_CLASS_NAME" value="com.hbnu.jdbcTemplate.c3p0.C3p0Test" />
+      <option name="METHOD_NAME" value="c3p0Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnnotationTest.testAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcTemplateTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hbnu.annotation.*" />
+          <option name="PATTERN" value="com.hbnu.jdbcTemplate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hbnu.annotation" />
-      <option name="MAIN_CLASS_NAME" value="com.hbnu.annotation.AnnotationTest" />
-      <option name="METHOD_NAME" value="testAnnotation" />
+      <option name="PACKAGE_NAME" value="com.hbnu.jdbcTemplate" />
+      <option name="MAIN_CLASS_NAME" value="com.hbnu.jdbcTemplate.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IocTest.testIoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcTemplateTest.selectUser1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hbnu.pojo.*" />
+          <option name="PATTERN" value="com.hbnu.jdbcTemplate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hbnu.pojo" />
-      <option name="MAIN_CLASS_NAME" value="com.hbnu.pojo.IocTest" />
-      <option name="METHOD_NAME" value="testIoc" />
+      <option name="PACKAGE_NAME" value="com.hbnu.jdbcTemplate" />
+      <option name="MAIN_CLASS_NAME" value="com.hbnu.jdbcTemplate.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="selectUser1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateTest.selectUser2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hbnu.jdbcTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hbnu.jdbcTemplate" />
+      <option name="MAIN_CLASS_NAME" value="com.hbnu.jdbcTemplate.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="selectUser2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateTest.selectUser3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hbnu.jdbcTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hbnu.jdbcTemplate" />
+      <option name="MAIN_CLASS_NAME" value="com.hbnu.jdbcTemplate.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="selectUser3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.IocTest.testIoc" />
-      <item itemvalue="JUnit.AnnotationTest.testAnnotation" />
-      <item itemvalue="JUnit.AOPTest.aopTest" />
+      <item itemvalue="JUnit.JdbcTemplateTest.deleteUser" />
+      <item itemvalue="JUnit.JdbcTemplateTest.selectUser1" />
+      <item itemvalue="JUnit.JdbcTemplateTest.selectUser2" />
+      <item itemvalue="JUnit.JdbcTemplateTest.selectUser3" />
+      <item itemvalue="JUnit.C3p0Test.c3p0Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AOPTest.aopTest" />
-        <item itemvalue="JUnit.AnnotationTest.testAnnotation" />
-        <item itemvalue="JUnit.IocTest.testIoc" />
+        <item itemvalue="JUnit.C3p0Test.c3p0Test" />
+        <item itemvalue="JUnit.JdbcTemplateTest.selectUser3" />
+        <item itemvalue="JUnit.JdbcTemplateTest.selectUser2" />
+        <item itemvalue="JUnit.JdbcTemplateTest.selectUser1" />
+        <item itemvalue="JUnit.JdbcTemplateTest.deleteUser" />
       </list>
     </recent_temporary>
   </component>
@@ -410,49 +515,52 @@
       <workItem from="1615541403527" duration="43000" />
       <workItem from="1615726616620" duration="28000" />
       <workItem from="1615764829935" duration="7108000" />
+      <workItem from="1615789162577" duration="594000" />
+      <workItem from="1615793358934" duration="79000" />
+      <workItem from="1616368866352" duration="8610000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AnnotationTest_testAnnotation - 2021.03.09 at 17h 35m 08s.xml">
-      <configuration name="AnnotationTest.testAnnotation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AnnotationTest_testAnnotation - 2021.03.09 at 17h 51m 42s.xml">
-      <configuration name="AnnotationTest.testAnnotation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AnnotationTest_testAnnotation - 2021.03.10 at 18h 30m 52s.xml">
-      <configuration name="AnnotationTest.testAnnotation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AnnotationTest_testAnnotation - 2021.03.15 at 08h 12m 19s.xml">
-      <configuration name="AnnotationTest.testAnnotation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AnnotationTest_testAnnotation - 2021.03.15 at 08h 12m 53s.xml">
-      <configuration name="AnnotationTest.testAnnotation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AOPTest_aopTest - 2021.03.15 at 10h 26m 44s.xml">
-      <configuration name="AOPTest.aopTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AOPTest_aopTest - 2021.03.15 at 10h 27m 44s.xml">
-      <configuration name="AOPTest.aopTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AOPTest_aopTest - 2021.03.15 at 11h 26m 43s.xml">
-      <configuration name="AOPTest.aopTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AOPTest_aopTest - 2021.03.15 at 11h 27m 29s.xml">
       <configuration name="AOPTest.aopTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AOPTest_aopTest - 2021.03.15 at 11h 29m 10s.xml">
       <configuration name="AOPTest.aopTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JdbcTemplateTest_insertUser - 2021.03.22 at 08h 18m 13s.xml">
+      <configuration name="JdbcTemplateTest.insertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTemplateTest_updateUser - 2021.03.22 at 08h 28m 24s.xml">
+      <configuration name="JdbcTemplateTest.updateUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTemplateTest_deleteUser - 2021.03.22 at 08h 30m 08s.xml">
+      <configuration name="JdbcTemplateTest.deleteUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTemplateTest_selectUser1 - 2021.03.22 at 08h 33m 43s.xml">
+      <configuration name="JdbcTemplateTest.selectUser1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTemplateTest_selectUser2 - 2021.03.22 at 08h 43m 16s.xml">
+      <configuration name="JdbcTemplateTest.selectUser2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTemplateTest_selectUser2 - 2021.03.22 at 08h 59m 46s.xml">
+      <configuration name="JdbcTemplateTest.selectUser2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTemplateTest_selectUser3 - 2021.03.22 at 09h 01m 58s.xml">
+      <configuration name="JdbcTemplateTest.selectUser3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="C3p0Test_c3p0Test - 2021.03.22 at 09h 28m 11s.xml">
+      <configuration name="C3p0Test.c3p0Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25403000" />
+    <option name="totallyTimeSpent" value="34686000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23257373" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24262735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -546,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,10 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,6 +685,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aopContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/AOPTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/LogRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,41 +717,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" lean-forward="true" selection-end-line="12" />
+        <state relative-caret-position="336">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aopContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="448">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/LogRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/MyRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.5.2.jar!/com/mchange/v2/c3p0/AbstractComboPooledDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="124" column="30" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.5.2.jar!/com/mchange/v2/c3p0/ComboPooledDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="67" lean-forward="true" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/JdbcTemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="7" />
+          <caret line="111" column="100" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hbnu/aop/AOPTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="224">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbcTemplateContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="68" lean-forward="true" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/C3p0Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="17" column="79" lean-forward="true" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hbnu/jdbcTemplate/c3p0/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
