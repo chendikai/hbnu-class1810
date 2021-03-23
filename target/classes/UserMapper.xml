@@ -2,9 +2,39 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 命名空间，代码中通过namespace + id 来确定执行哪个sql语句 -->
 <mapper namespace="UserMapper">
+    <!--insert、update、delete、select对应数据库的crud操作
+    resultType:简单数据类型（比如Integer、String、User）,List<User>只需要写集合中元素的类型
+    -->
     <select id="findAll" resultType="com.hbnu.pojo.User">
         select * from tb_user
     </select>
+
+    <!-- 1、添加用户信息 -->
+    <insert id="insert">
+        insert into tb_user(username, password, email, salary) values ('铠', '123456', 'kai@163.com',10000)
+    </insert>
+
+    <!-- 2、修改用户信息 -->
+    <update id="update">
+        update tb_user set password = '987654' where username = '铠'
+    </update>
+
+    <!-- 3、删除用户信息 -->
+    <delete id="delete">
+        delete from tb_user where username = '铠'
+    </delete>
+
+    <!-- 4、查询指定用户信息 -->
+    <select id="selectByUsername" resultType="com.hbnu.pojo.User">
+        select * from tb_user where username = 'chendikai'
+    </select>
+
+    <!-- 使用占位符 -->
+    <!-- 1、添加用户信息 -->
+    <insert id="insert2">
+        insert into tb_user(username, password, email, salary) values (#{username}, #{password}, #{email}, #{salary})
+    </insert>
 
 </mapper>

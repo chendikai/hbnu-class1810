@@ -36,4 +36,83 @@ public class MyBatisTest {
         }
 
     }
+
+    @Test
+    public void testInsert() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int rows = sqlSession.insert("UserMapper.insert");
+
+        sqlSession.commit();
+
+        System.out.println("影响的数据行数：" + rows);
+    }
+
+    @Test
+    public void testUpdate() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int rows = sqlSession.update("UserMapper.update");
+
+        sqlSession.commit();
+
+        System.out.println("影响的数据行数：" + rows);
+    }
+
+    @Test
+    public void testDelete() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int rows = sqlSession.delete("UserMapper.delete");
+
+        sqlSession.commit();
+
+        System.out.println("影响的数据行数：" + rows);
+    }
+
+    @Test
+    public void testSelectByUsername() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = sqlSession.selectOne("UserMapper.selectByUsername");
+
+        System.out.println(user);
+    }
+
+    @Test
+    public void testInsert2() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = new User();
+        user.setUsername("铠");
+        user.setPassword("123456");
+        user.setEmail("kai@qq.com");
+        user.setSalary(80000.00);
+
+        int rows = sqlSession.insert("UserMapper.insert2", user);
+
+        sqlSession.commit();
+
+        System.out.println("影响的数据行数：" + rows);
+    }
 }

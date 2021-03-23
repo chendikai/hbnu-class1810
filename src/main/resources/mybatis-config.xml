@@ -2,10 +2,22 @@
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- mybatis全局配置 -->
 <configuration>
+    <!-- 配置环境，可以配置多个环境，比如开发环境、测试环境、生产环境-->
     <environments default="develop">
+        <!-- 指定的环境 -->
         <environment id="develop">
+            <!-- 事务管理配置
+             JDBC:推荐使用，可以进行事务的自动管理
+             MANAGED:不推荐使用，需要手动进行管理事务
+             -->
             <transactionManager type="JDBC"></transactionManager>
+            <!-- 数据源配置
+            JNDI:已过时，不推荐使用
+            POOLED:使用数据库连接池
+            UNPOOLED:不使用数据库连接池
+            -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql:///hbnu?serverTimezone=GMT&amp;useSSL=false&amp;characterEncoding=utf-8"/>
@@ -16,6 +28,7 @@
 
     </environments>
 
+    <!-- 引入mapper配置文件，可以引入多个pmapper配置文件 -->
     <mappers>
         <mapper resource="UserMapper.xml"/>
     </mappers>
