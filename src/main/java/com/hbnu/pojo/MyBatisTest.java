@@ -8,7 +8,9 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author 陈迪凯
@@ -114,5 +116,87 @@ public class MyBatisTest {
         sqlSession.commit();
 
         System.out.println("影响的数据行数：" + rows);
+    }
+
+    @Test
+    public void testUpdate2() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = new User();
+        user.setUsername("chendikai");
+        user.setPassword("chendikai");
+        int rows = sqlSession.update("UserMapper.update2", user);
+
+        sqlSession.commit();
+
+        System.out.println("影响的数据库行数：" + rows);
+    }
+
+    @Test
+    public void testDelete2() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int rows = sqlSession.delete("UserMapper.delete2", "孤独患者");
+
+        sqlSession.commit();
+
+        System.out.println("影响的数据库行数：" + rows);
+    }
+
+    @Test
+    public void testSelect2() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = sqlSession.selectOne("UserMapper.select2", "chendikai");
+
+        System.out.println(user);
+    }
+
+    @Test
+    public void testSelect3() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        Map<String, String> map = new HashMap<>();
+        map.put("cols", "username, email");
+        List<User> userList = sqlSession.selectList("UserMapper.select3", map);
+
+        for (User user : userList) {
+            System.out.println(user.getUsername() + ":" + user.getEmail());
+        }
+    }
+
+    @Test
+    public void testSelect4() throws IOException {
+        InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        Map<String, Double> map = new HashMap<>();
+        map.put("minSal", 2000.00);
+        map.put("maxSal", 80000.00);
+
+        List<User> userList = sqlSession.selectList("UserMapper.select4", map);
+
+        for (User user : userList) {
+            System.out.println(user);
+        }
     }
 }

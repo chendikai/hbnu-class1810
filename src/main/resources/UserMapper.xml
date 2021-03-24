@@ -37,4 +37,38 @@
         insert into tb_user(username, password, email, salary) values (#{username}, #{password}, #{email}, #{salary})
     </insert>
 
+    <!-- 2、修改用户信息 -->
+    <update id="update2">
+        update tb_user set password = #{password} where username = #{username}
+    </update>
+
+    <!-- 3、删除用户信息 -->
+    <delete id="delete2">
+        delete from tb_user where username = #{username}
+    </delete>
+
+    <!-- 4、查询指定用户信息 -->
+    <select id="select2" resultType="com.hbnu.pojo.User">
+        select * from tb_user where username = #{username}
+    </select>
+
+    <!-- 使用${}占位符 -->
+    <select id="select3" resultType="com.hbnu.pojo.User">
+        select ${cols} from tb_user
+    </select>
+
+    <!-- 动态SQL语句 -->
+    <!-- 1、if、where元素 -->
+    <select id="select4" resultType="com.hbnu.pojo.User">
+        select * from tb_user
+        <where>
+            <if test="minSal != null">
+                salary > #{minSal}
+            </if>
+            <if test="maxSal != null">
+                and salary <![CDATA[<]]> #{maxSal}
+            </if>
+        </where>
+    </select>
+
 </mapper>
