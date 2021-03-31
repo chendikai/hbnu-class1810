@@ -1,5 +1,6 @@
 package com.hbnu.pojo;
 
+import com.hbnu.dao.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -198,5 +199,60 @@ public class MyBatisTest {
         for (User user : userList) {
             System.out.println(user);
         }
+    }
+
+    @Test
+    public void testUpdateSet() throws IOException {
+
+        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = new User();
+        user.setUsername("chendikai");
+        user.setPassword("123456");
+        user.setSalary(30000.00);
+
+        int rows = sqlSession.update("UserMapper.updateSet", user);
+
+        sqlSession.commit();
+
+        System.out.println("影响了数据行数：" + rows);
+    }
+
+    @Test
+    public void testSelectForeach() throws IOException {
+
+        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+       String[] usernames = {"chendikai", "陌上杨花"};
+
+        List<User> userList = sqlSession.selectList("UserMapper.selectForeach", usernames);
+
+        for (User user : userList) {
+            System.out.println(user);
+        }
+    }
+
+    @Test
+    public void testfindUserByUsername() throws IOException {
+
+        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+
+        User user = userMapper.findUserByUsername("chendikai");
+
+        System.out.println(user);
     }
 }

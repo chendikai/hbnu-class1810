@@ -71,4 +71,23 @@
         </where>
     </select>
 
+    <!-- 2、set元素 -->
+    <update id="updateSet">
+        update tb_user
+        <set>
+            <if test="password != null">password = #{password},</if>
+            <if test="email != null">email = #{email},</if>
+            <if test="salary != null">salary = #{salary}</if>
+        </set>
+        where username = #{username}
+    </update>
+
+    <!-- 3、foreach元素 -->
+    <select id="selectForeach" resultType="com.hbnu.pojo.User">
+        select * from tb_user where username in
+        <foreach collection="array" open="(" close=")" item="username" separator=",">
+            #{username}
+        </foreach>
+    </select>
+
 </mapper>
